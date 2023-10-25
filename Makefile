@@ -6,7 +6,7 @@
 #    By: adenord <alexandre.denord@gmail.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/26 09:58:12 by adenord           #+#    #+#              #
-#    Updated: 2023/10/25 11:43:18 by adenord          ###   ########.fr        #
+#    Updated: 2023/10/25 17:23:52 by adenord          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,10 +62,6 @@ writing :
 	echo "\033[32mCreating your static library ...\033[0m"
 
 $(NAME) : writing $(OBJS)
-	$(AR) $(ARFLAGS) $@ $(OBJS)
-	echo "\033[32mDone !\033[0m"
-
-bonus : writing $(OBJS)
 	$(AR) $(ARFLAGS) $@ $(OBJS)
 	echo "\033[32mDone !\033[0m"
 
